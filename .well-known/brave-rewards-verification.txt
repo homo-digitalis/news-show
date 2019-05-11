@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hd-love.de
+Token: da2bbe7186dff604210ece6b6807103dfd294b9b4eab52556bae6a9754bb2042
