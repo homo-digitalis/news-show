@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fancy News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container" id="container" style="text-align:center;">
+        <!-- <button class="btn btn-primary" type="button" id="stopNewsShow">Stop Current Show</button> -->
+        <button class="btn btn-primary" type="button" id="startTheNewsShowButton">Start News Show</button>
+        <button class="btn btn-primary" type="button" id="stopTheNewsShowButton">Stop News Show</button>
+        <button class="btn btn-success" type="button" id="customize" data-toggle="collapse"
+            data-target="#customizingArea">Customize</button>
+        <div id="customizingArea" class="collapse">
+            <p><br></p>
+            <hr>
+            <input class="radio-inline" type="radio" name="adsSettings" id="allowAds" value="allowAds"> Allow
+            Ads<br>
+            <input class="radio-inline" type="radio" name="adsSettings" id="preventAds" value="preventAds"> Prevent
+            Ads<br>
+
+            <div id="recommendation">
+
+            </div>
+            <br>
+            <hr>
+            <p><br></p>
+            <h2>Speed</h2>
+            <div class="slidecontainer">
+                <input class="custom-range" type="range" min="1" max="100" value="medium" class="slider" id="myRange">
+                <p><span id="demo"></span></p>
+            </div>
+
+            <hr>
+            <p></p><br>
+            <h2>Pages</h2>
+            <input style="width:80%;margin-left:10%" class="form-control" type="text" id="newURL" placeholder="Enter new URL for your News Show"
+                name="newURL" autofocus>
+            <br>
+            <button id="addNewURL" type="button" class="btn btn-primary">Add Page</button>
+
+            <p><br></p>
+
+            <div id="urls">
+                <div class="list">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="popup.js"></script>
