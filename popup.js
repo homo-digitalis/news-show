@@ -127,7 +127,7 @@ function updateRecommendation() {
     if (window.preventAds) {
         $('#recommendation').append('<div id="content"><p></p>To prevent ads from your show We recommend the <a href="https://brave.com/fan464" target="_blank">Brave Browser</a>. <br> Brave blocks all ads by default and seems to be the best Browser on earth.</div>')
     } else {
-        $('#recommendation').append('<div id="content"><p></p>If it is o.k. for you to have ads in your News Show, you can earn <a href="https://basicattentiontoken.org" target="_blank">BAT</a> using the <a href="https://brave.com/fan464" target="_blank">Brave Browser</a>. <br></div>')
+        $('#recommendation').append('<div id="content"><p></p>If it is o.k. for you to have ads in your News Show, you can earn <a href="https://basicattentiontoken.org" target="_blank">BAT</a> using the <a href="https://brave.com/fan464" target="_blank">Brave Browser</a>. <p></p> <br> After installing and opening Brave you can configure Rewards under brave://rewards. You can configure to receive a maximum of 5 ads per hour.</div>')
     }
 
 }
