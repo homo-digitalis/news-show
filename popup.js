@@ -73,17 +73,13 @@ function stopNewsShow() {
 
 function startTheNewsShow() {
     const index = getRandomNumber(0, window.urls.length - 1)
-    chrome.tabs.update({
-        url: window.urls[index]
-    });
+    const w = window.open(window.urls[index])
 
     const randomNumber = getRandomNumber(window.minimum * 1000, window.maximum * 1000)
 
     window.myIntervalID = setInterval(() => {
         const index = getRandomNumber(0, window.urls.length - 1)
-        chrome.tabs.update({
-            url: window.urls[index]
-        });
+        w.location.href = window.urls[index]
 
     }, randomNumber)
 }
