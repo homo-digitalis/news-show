@@ -26,10 +26,10 @@ $(function () {
         ]
         window.preventAds
         window.speed = 0.5
-        window.minimum = Math.floor((100000 / (100 * window.speed) + 7000) / 1000)
-        window.maximum = Math.floor((400000 / (100 * window.speed) + 7000) / 1000)
+        window.minimum = Math.floor(10000 * (1 / (window.speed * 1000)))
+        window.maximum = Math.floor(20000 * (1 / (window.speed * 1000)))
         output.innerHTML = `${output.innerHTML} <br> (Minimum Pause in Seconds: ${window.minimum} <br> Maximum Pause in Seconds: ${window.maximum})`;
-    
+
         updateList(window.urls);
     })
     $("#allowAds").click(function () {
@@ -75,13 +75,14 @@ function startTheNewsShow() {
     const index = getRandomNumber(0, window.urls.length - 1)
     const w = window.open(window.urls[index])
 
-    const randomNumber = getRandomNumber(window.minimum * 1000, window.maximum * 1000)
+    const displayDuration = getRandomNumber(window.minimum * 1000, window.maximum * 1000)
+    // const scrollTimeout = getRandomNumber(window.minimum * 1000, window.maximum * 1000)
 
     window.myIntervalID = setInterval(() => {
         const index = getRandomNumber(0, window.urls.length - 1)
         w.location.href = window.urls[index]
 
-    }, randomNumber)
+    }, displayDuration)
 }
 
 function getRandomNumber(min, max) {
@@ -151,8 +152,8 @@ slider.oninput = function () {
     }
 
     window.speed = this.value / 100
-    window.minimum = Math.floor((100000 / (100 * window.speed) + 7000) / 1000)
-    window.maximum = Math.floor((400000 / (100 * window.speed) + 7000) / 1000)
+    window.minimum = Math.floor(10000 * (1 / (window.speed * 1000)))
+    window.maximum = Math.floor(20000 * (1 / (window.speed * 1000)))
     output.innerHTML = `${output.innerHTML} <br> (Minimum Pause in Seconds: ${window.minimum} <br> Maximum Pause in Seconds: ${window.maximum})`;
 
 
