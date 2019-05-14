@@ -9,9 +9,6 @@ $(function () {
             "https://www.finanzen.net/aktien/SAP-Aktie",
             "https://www.nasdaq.com/symbol/?Load=true&Search=tesla",
             "https://www.spiegel.de/",
-            "https://www.nasdaq.com/symbol/aapl",
-            "https://www.nasdaq.com/de/symbol/amzn/real-time",
-            "https://www.nasdaq.com/symbol/sap",
             "https://coinmarketcap.com/currencies/basic-attention-token/",
             "https://coinmarketcap.com/currencies/eos/",
             "https://coinmarketcap.com/currencies/ethereum/",
@@ -20,9 +17,7 @@ $(function () {
             "https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ",
             "https://www.dhbw-mannheim.de",
             "https://fance-fitness.com/",
-            "https://www.nasdaq.com/symbol/baba",
-            "https://www.nasdaq.com/symbol/dax",
-            "https://www.google.com/search?q=nasdaq+dow+jones"
+            "https://www.nasdaq.com/symbol/?Load=true&Search=tesla"
         ]
         window.preventAds
         window.speed = 0.5
