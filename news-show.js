@@ -7,14 +7,12 @@ $(function () {
         $('#container').css('height', '40');
         window.urls = [
             "https://www.finanzen.net/aktien/SAP-Aktie",
-            "https://www.nasdaq.com/symbol/?Load=true&Search=tesla",
             "https://www.spiegel.de/",
             "https://coinmarketcap.com/currencies/basic-attention-token/",
             "https://coinmarketcap.com/currencies/eos/",
             "https://coinmarketcap.com/currencies/ethereum/",
             "https://coinmarketcap.com/currencies/tron/",
             "https://www.crypto-news.net/",
-            "https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ",
             "https://www.dhbw-mannheim.de",
             "https://fance-fitness.com/"
         ]
