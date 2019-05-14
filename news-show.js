@@ -16,8 +16,7 @@ $(function () {
             "https://www.crypto-news.net/",
             "https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ",
             "https://www.dhbw-mannheim.de",
-            "https://fance-fitness.com/",
-            "https://www.nasdaq.com/symbol/?Load=true&Search=tesla"
+            "https://fance-fitness.com/"
         ]
         window.preventAds
         window.speed = 0.5
